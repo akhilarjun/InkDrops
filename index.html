@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel='stylesheet' type='text/css' href='css/inkdrops.css'></link>
-<link rel='stylesheet' type='text/css' href='css/style.css'></link>
-<title>InkDrops</title>
-</head>
-<body>
-<div class='inkMe' ink-color='#fff'>
-	<h1>InkDrops</h1>
-</div>
-	<div class='content'>
-		<div class='component'>
-			<a class='inkMe'>Regular Link</a>
-		</div>
-		<div class='component'>
-			<a class='inkMe' ink-color='#39c'>Blue Ripple on a Link</a>
-		</div>
-		<div class='component'>
-			<button class='inkMe' ink-color='#fff'>White Ripple on Button</button>
-		</div>
-		<div class='component'>
-			<button class='inkMe' ink-color='yellow' multiple-ink=true style='background-color: #c44;border-color: #c44;'>I am a Button with Multiple Ripples</button>
-		</div>
-		<div class='component demoText'>
-			<span class='inkMe' ink-color='#ddd'>This is a demo text with no relevant information that can be concieved or concluded by interpreting the intended content</span>
-		</div>
-	</div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src='js/ink.js'></script>
-</body>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Inkdrops by akhilarjun</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Inkdrops</h1>
+        <h2>The Ink-Drop style interaction that is added in the material design by Google using jQuery and CSS.</h2>
+        <a href="https://github.com/akhilarjun/InkDrops" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="inkdrops" class="anchor" href="#inkdrops" aria-hidden="true"><span class="octicon octicon-link"></span></a>InkDrops</h1>
+
+<p>The Ink-Drop style interaction that is added in the material design by Google using jQuery and CSS.</p>
+
+<p>The new Design concept MaterialJs launched with the new Google Android 5.0 had a beautiful Ink Drop fading animation for every click. And the same was implemented in the Polymer project as well. So this is just a small breakdown for the same using jQuery and CSS.</p>
+
+<h2>
+<a id="how-to-" class="anchor" href="#how-to-" aria-hidden="true"><span class="octicon octicon-link"></span></a>How To :</h2>
+
+<p>First include the <em>inkdrop.css</em> ,<em>ink.js file</em> and <em>jQuery</em> to your page</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s1"><span class="pl-pds">'</span>stylesheet<span class="pl-pds">'</span></span> <span class="pl-e">type</span>=<span class="pl-s1"><span class="pl-pds">'</span>text/css<span class="pl-pds">'</span></span> <span class="pl-e">href</span>=<span class="pl-s1"><span class="pl-pds">'</span>css/inkdrops.css<span class="pl-pds">'</span></span>&gt;&lt;/<span class="pl-ent">link</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s1"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">'</span>js/ink.js<span class="pl-pds">'</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s1"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">'</span>js/jquery.min.js<span class="pl-pds">'</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p>Then all you have to do is add a class '<em>inkMe</em>' to the containing element that needs the ink drop effect. And Voila! when you click the element you could see the ink drop dripping<br></p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">'</span>inkMe<span class="pl-pds">'</span></span>&gt;Regular Link&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/akhilarjun/InkDrops/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/akhilarjun/InkDrops/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/akhilarjun/InkDrops"></a> is maintained by <a href="https://github.com/akhilarjun">akhilarjun</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
 </html>
