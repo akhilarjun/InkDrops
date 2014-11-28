@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	text-align: center;
+	font-size : 65px;
+	display: block;
+	padding : 50px;
+	color : #fff;
+	background-color: #4ca;
+	margin: 0;
+	cursor: pointer;
+}
+
+.content{
+	margin-top : 20px;
+	padding: 0 30px;
+}
+
+.component{
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	margin-top:0;
+}
+
+.component a{
+	text-decoration: none;
+	font-size : 20px;
+	display: inline-block;
+	border: 1px dashed #666;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.component button{
+	background: #4ac;
+	padding: 10px;
+	color: #fff;
+	border: 0px solid #4ac;
+	font-size: 20px;
+	outline:none;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.component.demoText span{
+	display: inline-block;
+	font-size: 20px;
+	padding: 20px 10px;
+}
