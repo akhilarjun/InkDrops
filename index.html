@@ -55,15 +55,21 @@
 <h2>
 <a id="customize" class="anchor" href="#customize" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customize</h2>
 
-<p>You can also change the color of the ink ripple by using the <em>ink-color</em> attribute</p>
+<p>You can also change the color of the ink ripple by assigning the <em>ink-color</em> attribute any custom class that has the backround-color set. This also works with bootstrap classes like primary, danger, etc.</p>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">'</span>inkMe<span class="pl-pds">'</span></span> <span class="pl-e">ink-color</span>=<span class="pl-s1"><span class="pl-pds">'</span>#fff<span class="pl-pds">'</span></span>&gt;White Ripple on Button&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">'</span>inkMe<span class="pl-pds">'</span></span> <span class="pl-e">ink-color</span>=<span class="pl-s1"><span class="pl-pds">'</span>bgBlue<span class="pl-pds">'</span></span>&gt;Blue Ripple on Button&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
+
+<p>Where <em>bgBlue</em> is</p>
+
+<div class="highlight highlight-css"><pre><span class="pl-e">.bgBlue</span>{
+    <span class="pl-mp"><span class="pl-s3">background</span></span>: <span class="pl-c1">#39c</span>;
+}</pre></div>
 
 <p>Also you can add multiple ink-drops overlapping one another by using the <em>multiple-ink</em> attribute</p>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">'</span>inkMe<span class="pl-pds">'</span></span> <span class="pl-e">ink-color</span>=<span class="pl-s1"><span class="pl-pds">'</span>yellow<span class="pl-pds">'</span></span> <span class="pl-e">multiple-ink</span>=<span class="pl-s1">true</span>&gt;Button with Multiple Ripples&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">'</span>inkMe<span class="pl-pds">'</span></span> <span class="pl-e">ink-color</span>=<span class="pl-s1"><span class="pl-pds">'</span>bgYellow<span class="pl-pds">'</span></span> <span class="pl-e">multiple-ink</span>=<span class="pl-s1">true</span>&gt;Button with Multiple Ripples&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
 
-<p><em>Does not work with IE8 and below versions <img class="emoji" title=":rage2:" alt=":rage2:" src="https://assets-cdn.github.com/images/icons/emoji/rage2.png" height="20" width="20" align="absmiddle"></em></p>
+<p><em>Does not work with IE8 and below versions <img class="emoji" title=":smirk:" alt=":smirk:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60f.png" height="20" width="20" align="absmiddle"></em></p>
         </section>
 
         <aside id="sidebar">
