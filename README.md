@@ -16,14 +16,20 @@ Then all you have to do is add a class '_inkMe_' to the containing element that 
 <a class='inkMe'>Regular Link</a>
 ```
 ##Customize 
-You can also change the color of the ink ripple by using the *ink-color* attribute
+You can also change the color of the ink ripple by assigning the *ink-color* attribute any custom class that has the backround-color set. This also works with bootstrap classes like primary, danger, etc.
 ```html
-<button class='inkMe' ink-color='#fff'>White Ripple on Button</button>
+<button class='inkMe' ink-color='bgBlue'>Blue Ripple on Button</button>
+```
+Where *bgBlue* is
+```css
+.bgBlue{
+    background: #39c;
+}
 ```
 
 Also you can add multiple ink-drops overlapping one another by using the *multiple-ink* attribute
 ```html
-<button class='inkMe' ink-color='yellow' multiple-ink=true>Button with Multiple Ripples</button>
+<button class='inkMe' ink-color='bgYellow' multiple-ink=true>Button with Multiple Ripples</button>
 ```
 
-*Does not work with IE8 and below versions :rage2:*
+*Does not work with IE8 and below versions *:smirk:
