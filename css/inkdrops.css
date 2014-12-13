@@ -1,6 +1,4 @@
 .inkMe{
-	padding:0;
-	margin:0;
 	box-sizing:border-box;
 	overflow:hidden;
 	position: relative !important;
@@ -9,12 +7,15 @@
 .ink{
 	position: absolute;
 	display: block;
-	background-color: rgba(68, 204, 170, 0.45);
 	border-radius: 100%;
 	-webkit-transform: scale(0);
 	-moz-transform: scale(0);
 	-o-transform: scale(0);
 	transform: scale(0);
+}
+
+.inkDefaultColor{
+	background-color: rgba(68, 204, 170, 0.45);
 }
 
 .ink.animate{
