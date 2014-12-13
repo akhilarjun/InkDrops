@@ -9,6 +9,22 @@ body{
 	padding: 0;
 }
 
+.bgRed{
+	background: #c44c33;
+}
+
+.bgYellow{
+	background: yellow;
+}
+
+.bgWhite{
+	background: #fff;
+}
+
+.bgBlue{
+	background: #39c;
+}
+
 h1{
 	text-align: center;
 	font-size : 65px;
