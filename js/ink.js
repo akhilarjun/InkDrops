@@ -11,9 +11,18 @@ $('.inkMe').click(function(evt){
 		elem.prepend("<span class='ink'></span>");
 	var display = elem.css("display");
 	(display=='inline'||display=='inline-block')?elem.css({display:'inline-block'}):elem.css({display:'block'});
-	var inkColor = this.getAttribute("ink-color");
-	var ink = elem.find('.ink');		
-	inkColor!=""?ink.css({'background-color':inkColor}):true;
+	var ink = elem.find('.ink');
+	ink.addClass('inkDefaultColor');
+	// For custom colors in the ripple
+	if($(this).is('[ink-color]'))
+	{
+		var inkColor = this.getAttribute("ink-color");
+		if(inkColor!="")
+		{
+			ink.removeClass('inkDefaultColor');
+			ink.addClass(inkColor);
+		}
+	}
 	(!multiple)?ink.removeClass('animate'):true;
 	if(!ink.width()&&!ink.height())
 		{
